@@ -1,0 +1,63 @@
+.bunkManager{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.bunkManager_container{
+    background-color: #fff;
+    padding: 1rem;
+    margin: 4rem;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px #ccc;
+    max-width: 800px;
+}
+@media (max-width:500px) {
+    .bunkManager_container{
+        box-shadow: none;
+    }
+}
+.submit_btn{
+    font-weight: 600;
+    font-size: 16px;
+    margin: 1rem 0;
+    border: none;
+    background-color: #1640D6;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0px 5px 5px #ccc;
+    transition: all 0.2s ease-in-out;
+}
+.submit_btn:hover{
+    background-color: #001B79;
+    padding: 0.6rem 1.1rem;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.form-group input{
+    border: 1px solid black;
+    border-radius: 0.3rem;
+    padding: 0.3rem;
+    font-size: 1rem;
+}
+
+.form-group label{
+    margin-bottom: 0.2rem;
+}
+
+@media (max-width: 730px){
+    .bunkManager_container{
+        width: 100%;
+        padding: 0;
+    }
+    .submit_btn{
+        margin: 1rem .5rem;
+    }
+}

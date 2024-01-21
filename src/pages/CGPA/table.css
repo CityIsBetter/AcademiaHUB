@@ -1,0 +1,126 @@
+.table_wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.result_container{
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.result{
+    border-radius: 10px;
+    padding: 2rem;
+    background-color: white;
+    width: 10em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.ok_btn{
+    margin: 1rem;
+    border: none;
+    padding: 0.5rem 1rem;
+    background-color: #7dcb84;
+    color: white;
+    border-radius: 10px;
+    transition: all 0.2s ease-in-out;
+}
+.ok_btn:hover{
+    background-color: #60b067;
+}
+.cal_btn{
+    font-weight: 600;
+    font-size: 16px;
+    margin: 1rem 2rem 0 27rem;
+    border: none;
+    padding: 0.5rem 1rem;
+    background-color: #395ddf;
+    color: white;
+    border-radius: 10px;
+    transition: all 0.2s ease-in-out;
+}
+.cal_btn:hover{
+    background-color: #27409b;
+}
+
+@media (max-width: 600px) {
+    .cal_btn{
+        margin: 1rem 2rem 0 75%;
+    }
+}
+
+.cgpa_table{
+    display: block;
+    overflow: hidden;
+    table-layout: auto;
+    border-collapse: collapse;
+    white-space: nowrap;
+    max-width: auto;
+    margin: 1rem;
+    overflow-x: auto;
+    box-shadow: 0px 0px 10px #ccc;
+    border-radius: 10px;
+    width: auto;
+    font-size: 24px;
+}
+@media (max-width: 600px) {
+    .cgpa_table{
+        font-size: 18px;
+    }
+}
+.cgpa_table thead{
+    background-color: #ccc;
+    color: #222;
+}
+.cgpa_table tbody{
+    background-color: #fff;
+}
+
+.cgpa_table th,
+.cgpa_table td{
+    padding: 0.8rem;
+}
+
+.cgpa_table td{
+    border-top: 0.5px solid #aaa;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.credit{
+    padding: 0.2rem;
+    border: 1px solid #aaa;
+    border-radius: 10px;
+    font-size: 24px;
+}
+.grade-option{
+    font-size: 24px;
+    border-radius: 10px;
+    padding: 0.2rem;
+}
+@media (max-width: 600px) {
+    .credit,
+    .grade-option{
+        font-size: 18px;
+    }
+}
+@media (max-width: 500px) {
+    .cgpa_table{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .credit{
+        width: 200px;
+    }
+}

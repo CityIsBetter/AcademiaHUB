@@ -1,0 +1,26 @@
+.signIn_wrapper{
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.signIn_container{
+    margin-top: 20%;
+    background-color: #eee;
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0px 0px 20px #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.signIn_container h2{
+    text-align: center;
+}
+.signIn_container p{
+    padding: 1rem;
+}

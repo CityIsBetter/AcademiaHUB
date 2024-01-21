@@ -1,0 +1,63 @@
+.tasks{
+    display: flex;
+    justify-content: space-between;
+    background-color: #ddd;
+    margin: 0.5rem 0 0.5rem 0;
+    padding: 1rem;
+    border-radius: 10px;
+}
+.completed_task{
+    display: flex;
+    justify-content: space-between;
+    background-color: #ccc;
+    margin: 0.5rem 0 0.5rem 0;
+    padding: 1rem;
+    border-radius: 10px;
+}
+.row{
+    display: flex;
+}
+.reminder_title{
+    font-weight: 600;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    margin-left: 1rem;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+.reminder_title_completed{
+    font-weight: 600;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    margin-left: 1rem;
+    text-decoration: line-through;
+    cursor: pointer;
+    color: #777;
+}
+.reminder_date{
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    max-width: 100px;
+    border-radius: 10px;
+    font-weight: 400;
+    font-size: .75rem;
+}
+.delete_reminder_btn{
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 24px;
+    transition: all 0.3s ease-in-out;
+}
+.delete_reminder_btn:hover{
+    color: #e10d05;
+}
+.table tr{
+    border-bottom: 1px solid black;
+}
+
+.checkBox{
+    transform: scale(2);
+}
+
