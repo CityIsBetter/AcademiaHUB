@@ -7,6 +7,7 @@
 .reminder_container{
     background-color: #eee;
     max-width: 500px;
+    min-width: 500px;
     box-shadow: 0px 0px 20px #ccc;
     border-radius: 10px;
     padding: 1rem;
@@ -59,6 +60,7 @@ ul{
     .reminder_container{
         margin: 4rem 0;
         width: 100%;
+        min-width: auto;
     }
 }
 
