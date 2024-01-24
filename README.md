@@ -6,11 +6,11 @@ AcademiaHUB: Bunk management, Reminders, and CGPA calculator. Your all-in-one we
 
 # Screenshots
 
-![screenshot of the website](https://i.imgur.com/9isJcCo.png)
-![screenshot of the website](https://i.imgur.com/7QV298X.png)
-![screenshot of the website](https://i.imgur.com/PaOA6jU.png)
-![screenshot of the website](https://i.imgur.com/LkW7y46.png)
-
+![screenshot of the website](https://i.imgur.com/3WlZmOR.png)
+![screenshot of the website](https://i.imgur.com/AfayQFi.png)
+![screenshot of the website](https://i.imgur.com/FIlm0pQ.png)
+![screenshot of the website](https://i.imgur.com/Y9ia5hO.png)
+![screenshot of the website](https://i.imgur.com/IpHKBFZ.png)
 ## Features
 - Manage your attendance
 - Set reminders
