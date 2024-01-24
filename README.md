@@ -1,8 +1,7 @@
-# AcademiaHUB
+# [AcademiaHUB](https://academiahub.netlify.app/)
 
 AcademiaHUB: Bunk management, Reminders, and CGPA calculator. Your all-in-one website, seamlessly connected to your Google account for on-the-go accessibility. Made using React JS framework and firebase for the backend
 
-[live in here](https://academiahub.netlify.app/)
 
 # Screenshots
 
