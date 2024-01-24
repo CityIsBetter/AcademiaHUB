@@ -5,9 +5,11 @@
 
     padding: 1rem 2rem;
 
+    border: 2px solid rgba(255, 255, 255, 0.18);
+    border-radius: 15px;
     background: var(--nav);
     backdrop-filter: blur(10px);
-    box-shadow: 0 8px 32px 0 var(--tblack);
+    box-shadow: 0 8px 32px var(--tblack);
     position: sticky;
     top: 0;
 
@@ -30,7 +32,7 @@
     transition: all 0.3s ease-in-out;
 }
 .navbar_links li a:hover{
-    background-color: rgba(221, 221, 221, 0.5);
+    background-color: rgba(255, 255, 255, 0.5);
     border-radius: 10px;
 }
 .active{
@@ -41,7 +43,7 @@
     transition: all 0.3s ease-in-out;
 }
 .logout:hover{
-    background-color: #ddd;
+    background-color: #ffffff9a;
     border-radius: 10px;
 }
 

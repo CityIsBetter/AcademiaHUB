@@ -51,10 +51,10 @@ const BunkManager = () => {
   return (
     <>
     <div className="bunkManager">
+    {modalOpen && <Modal closeModal={() => {setModalOpen(false); setRowToEdit(null);}} onSubmit={handleSubmit} defaultValue={rowToEdit !== null && rows[rowToEdit]}/>}
       <div className='bunkManager_container'>
         <Table rows={rows} deleteRow={handleDeleteRow} editRow={handleEditRow}/>
         <button className='submit_btn' onClick={() => setModalOpen(true)}>Add Course</button>
-        {modalOpen && <Modal closeModal={() => {setModalOpen(false); setRowToEdit(null);}} onSubmit={handleSubmit} defaultValue={rowToEdit !== null && rows[rowToEdit]}/>}
       </div>
     </div>
     </>

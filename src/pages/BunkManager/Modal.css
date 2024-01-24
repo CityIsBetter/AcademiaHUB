@@ -1,22 +1,34 @@
 .modal_container{
     position: fixed;
     z-index: 1;
-    left: 0;
-    top: 0;
     width: 100%;
     height: 100%;
+    top: 0;
+    left: 0;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgba(0,0,0,0.2);
 }
 .modal{
     border-radius: 5px;
     padding: 2rem;
-    background-color: white;
+
+    background-color: rgba(255,255,255,0.3);
+    backdrop-filter: blur(4px);
+    border: 2px solid rgba( 255, 255, 255, 0.18 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    
     width: 25em;
     display: flex;
     flex-direction: row;
+}
+.modal_form input{
+    background-color: rgba(255,255,255,0.5);
+    box-shadow: 0 0px 10px rgba( 31, 38, 135, 0.37 );
+}
+.modal_form label{
+    font-weight: 600;
 }
 
 .modal_form{

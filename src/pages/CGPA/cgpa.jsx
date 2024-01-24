@@ -11,7 +11,7 @@ const Cgpa = () => {
   }
   return (
     <>
-    <div className="cgpa_wrapper">
+    <div className={rows.length <= 7 ? "cgpa_wrapper vh" : "cgpa_wrapper"}>
       <div className='cgpa_container'>
         <h1>CGPA Calculator</h1>
         <Table rows={rows}/>

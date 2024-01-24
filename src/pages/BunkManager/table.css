@@ -14,16 +14,17 @@
     max-width: auto;
     margin: auto;
     overflow-x: auto;
-    box-shadow: 0px 0px 10px #ccc;
     border-radius: 10px;
+    border: 2px solid rgba( 255, 255, 255, 0.18 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
 }
 
 .table thead{
-    background-color: #ccc;
+    background-color: rgba(0, 0, 0, .25);
     color: #222;
 }
 .table tbody{
-    background-color: #fff;
+    background-color: rgba(255,255,255,0.25);
 }
 
 .table th,
@@ -40,26 +41,27 @@
 .actions button{
     cursor: pointer;
     margin: 0 0.5rem;
+    background-color: rgba(0, 0, 0, 0);
 }
 
 .edit_btn{
     border: none;
     font-size: 24px;
-    background-color: #fff;
+
     transition: all 0.2s ease-in-out;
 }
 .edit_btn:hover{
-    color: #aaa;
+    color: green;
 }
 
 .delete_btn{
+    color: #ff0f07;
     border: none;
     font-size: 24px;
-    background-color: #fff;
     transition: all 0.3s ease-in-out;
 }
 .delete_btn:hover{
-    color: #e10d05;
+    color: #ce1e18;
 }
 
 .red{

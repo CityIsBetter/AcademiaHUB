@@ -1,8 +1,14 @@
 .home{
-    height: 100%;
+    height: calc(100vh - 88px);
     width: 100%;
+    overflow: hidden;
 }
-.home_logo{
+@media (max-width: 850px){
+    .home{
+        height: calc(100vh - 80px);
+    }
+}
+/* .home_logo{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -10,9 +16,24 @@
     
     font-size: 9rem;
     font-weight: 900;
-}
+} */
 
+.home_logo{
+    font-size: 9rem;
+    font-weight: 900;
+
+    margin: 30vh 0 0 0;
+    text-align: center;
+}
+@media (max-width: 450px){
+    .home_logo{
+        margin: 40vh 0 0 0;
+    }
+}
 .home_subtext{
+    text-align: center;
+}
+/* .home_subtext{
     font-weight: 400;
     position: absolute;
     top: 60%;
@@ -21,7 +42,7 @@
 
     width: 100%;
     text-align: center;
-}
+} */
 
 .home_specialText{
     color: #eb452b;

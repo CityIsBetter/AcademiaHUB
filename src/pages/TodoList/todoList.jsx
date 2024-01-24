@@ -64,7 +64,7 @@ const TodoList = () => {
   }
 
   return (
-    <div className="reminder_wrapper">    
+    <div className={activeCount <= 7 ? "reminder_wrapper vh" : "reminder_wrapper"}>    
       <div className='reminder_container'>
         <h1>Reminders</h1>
         <form className='reminder_form'>

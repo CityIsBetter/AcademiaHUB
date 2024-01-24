@@ -7,7 +7,7 @@ const Table = ({reminder, toggleComplete, deleteReminder}) => {
   return (
     <li className={reminder.completed ? 'completed_task' : 'tasks'}>
         <div className="row">
-            <input onChange={() => toggleComplete(reminder)} type='checkbox' checked={reminder.completed ? 'checked' : ''} className='checkBox'/>
+            <input onChange={() => toggleComplete(reminder)} type='checkbox' checked={reminder.completed ? 'checked' : ''} className='checkBox'/><span onClick={() => toggleComplete(reminder)} className='checkmark'></span>
             <p onClick={() => toggleComplete(reminder)} className={ reminder.completed ? 'reminder_title_completed' : 'reminder_title' }>{reminder.task}</p>
         </div>
         <button className='delete_reminder_btn' onClick={() => deleteReminder(reminder)}>{<FaRegTrashAlt />}</button>

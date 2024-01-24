@@ -14,13 +14,17 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: rgba(0,0,0,0.4);
+    /* background-color: rgba(0,0,0,0.1); */
 }
 
 .result{
     border-radius: 10px;
     padding: 2rem;
-    background-color: white;
+    border: 2px solid rgba( 255, 255, 255, 0.18 );
+    background-color: rgba( 255, 255, 255, 0.7);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur(5px);
+
     width: 10em;
     display: flex;
     justify-content: center;
@@ -35,6 +39,8 @@
     color: white;
     border-radius: 10px;
     transition: all 0.2s ease-in-out;
+    border: 2px solid rgba( 255, 255, 255, 0.18 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
 }
 .ok_btn:hover{
     background-color: #60b067;
@@ -49,6 +55,8 @@
     color: white;
     border-radius: 10px;
     transition: all 0.2s ease-in-out;
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    border: 2px solid rgba( 255, 255, 255, 0.18 );
 }
 .cal_btn:hover{
     background-color: #27409b;
@@ -69,7 +77,8 @@
     max-width: auto;
     margin: 1rem;
     overflow-x: auto;
-    box-shadow: 0px 0px 10px #ccc;
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    border: 2px solid rgba( 255, 255, 255, 0.18 );
     border-radius: 10px;
     width: auto;
     font-size: 24px;
@@ -80,11 +89,11 @@
     }
 }
 .cgpa_table thead{
-    background-color: #ccc;
+    background: rgba(0, 0, 0, 0.25);
     color: #222;
 }
 .cgpa_table tbody{
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.25);
 }
 
 .cgpa_table th,
@@ -100,12 +109,17 @@
 
 .credit{
     padding: 0.2rem;
-    border: 1px solid #aaa;
+    border: 2px solid rgba( 255, 255, 255, 0.18 );
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0px 2px 0 rgba( 31, 38, 135, 0.37 );
     border-radius: 10px;
     font-size: 24px;
 }
 .grade-option{
+    border: 2px solid rgba( 255, 255, 255, 0.18 );
     font-size: 24px;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0px 2px 0 rgba( 31, 38, 135, 0.37 );
     border-radius: 10px;
     padding: 0.2rem;
 }
@@ -119,6 +133,9 @@
     .cgpa_table{
         margin-left: 0;
         margin-right: 0;
+    }
+    .cal_btn{
+        margin: 1rem 0 0 70%;
     }
     .credit{
         width: 200px;

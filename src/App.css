@@ -1,11 +1,12 @@
 .App{
-    height: 100vh;
-    width: 100%;
+    height: 100%;
 }
 button{
     cursor: pointer;
 }
-
+button:hover{
+    transform: scale(1.1);
+}
 a{
     color: #111;
     text-decoration: none;

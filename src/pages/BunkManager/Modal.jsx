@@ -59,11 +59,11 @@ const Modal = ({closeModal, onSubmit, defaultValue}) => {
                     </div>
                     <div className='form-group'>
                         <label>Bunked Hours</label>
-                        <input name='bunkedHours' type='number' value={formState.bunkedHours} onChange={handleChange} min="0" pattern="[0-9]*" inputmode="numeric"/>
+                        <input name='bunkedHours' type='number' value={formState.bunkedHours} onChange={handleChange} min="0" pattern="[0-9]*" inputMode="numeric"/>
                     </div>
                     <div className='form-group'>
                         <label>Total Hours</label>
-                        <input name='totalHours' type='number' value={formState.totalHours} onChange={handleChange} min="0" pattern="[0-9]*" inputmode="numeric"/>
+                        <input name='totalHours' type='number' value={formState.totalHours} onChange={handleChange} min="0" pattern="[0-9]*" inputMode="numeric"/>
                     </div>
                     {errors  && <div className='error'>{`Please enter value for: ${errors}`}</div>}
                     <button type='submit' className='submit_btn' onClick={handleSubmit}>Add</button>

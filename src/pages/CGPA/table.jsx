@@ -43,7 +43,7 @@ const Table = ({rows}) => {
   return (
     <div>
         {gpa && <div className="result_container" onClick={(e) => {
-                    if(e.target.className === "result_container")setGpa('');
+                    if(e.target.className === "result_container") setGpa('');
                 }}>
             <div className="result">
                 <p>Your GPA: {gpa}</p>

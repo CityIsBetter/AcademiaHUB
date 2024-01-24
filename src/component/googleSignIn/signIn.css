@@ -1,18 +1,16 @@
 .signIn_wrapper{
-    /* display: flex;
+    display: flex;
     align-items: center;
-    justify-content: center; */
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    justify-content: center;
+    height: 100vh;
 }
 .signIn_container{
-    margin-top: 20%;
-    background-color: #eee;
+    background-color: rgba(255, 255, 255, .25);
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, .18);
     border-radius: 15px;
     padding: 2rem;
-    box-shadow: 0px 0px 20px #ccc;
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     display: flex;
     align-items: center;
     justify-content: center;
