@@ -13,7 +13,7 @@
     border: 2px solid rgba( 255, 255, 255, 0.18 );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
 
-    max-width: 500px;
+    max-width: 700px;
     min-width: 500px;
     
     border-radius: 10px;
@@ -32,7 +32,7 @@
 .submit_reminder_btn{
     font-size: 20px;
     border: none;
-    background-color: #1640D6;
+    background-color: #1640d6f0;
 
     box-shadow: 0px 0px 20px #65656575;
     border: 2px solid rgba( 255, 255, 255, 0.18 );
@@ -44,7 +44,7 @@
     transition: all 0.2s ease-in-out;
 }
 .submit_reminder_btn:hover{
-    background-color: #001B79;
+    background-color: #001a79f0;
 }
 
 .reminder_form{
@@ -54,6 +54,7 @@
 }
 .todo_input{
     border: 2px solid rgba( 255, 255, 255, 0.18 );
+    background-color: #ffffff99;
     box-shadow: 0px 0px 20px #65656575;
     width: 100%;
     margin-right: 1rem;
@@ -61,6 +62,7 @@
     border-radius: 10px;
     font-size: 1.25rem;
     padding-left: 0.5rem;
+    outline: none;
 }
 .reminder_count{
     text-align: center;

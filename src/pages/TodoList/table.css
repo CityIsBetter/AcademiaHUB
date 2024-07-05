@@ -1,126 +1,147 @@
-.tasks{
-    box-shadow: 0px 0px 20px #65656575;
-    border: 2px solid rgba( 255, 255, 255, 0.18 );
+.tasks {
+  box-shadow: 0px 0px 20px rgba( 31, 38, 135, 0.37 );
+  border: 2px solid rgba( 255, 255, 255, 0.18 );
+  display: flex;
+  justify-content: space-between;
+  background-color: #dddddd7a;
+  margin: 0.5rem 0;
+  padding: 1rem;
+  border-radius: 10px;
+}
 
-    display: flex;
-    justify-content: space-between;
-    background-color: #dddddd7a;
-    margin: 0.5rem 0 0.5rem 0;
-    padding: 1rem;
-    border-radius: 10px;
+.completed_task {
+  box-shadow: 0px 0px 20px rgba( 31, 38, 135, 0.37 );
+  border: 2px solid rgba( 255, 255, 255, 0.18 );
+  display: flex;
+  justify-content: space-between;
+  background-color: #aaaaaa7a;
+  margin: 0.5rem 0;
+  padding: 1rem;
+  border-radius: 10px;
 }
-.completed_task{
-    box-shadow: 0px 0px 20px #65656575;
-    border: 2px solid rgba( 255, 255, 255, 0.18 );
 
-    display: flex;
-    justify-content: space-between;
-    background-color: #aaaaaa7a;
-    margin: 0.5rem 0 0.5rem 0;
-    padding: 1rem;
-    border-radius: 10px;
+.task_content{
+  display: flex;
+  flex-direction: column;
 }
-.row{
-    display: flex;
-    align-items: center;
+
+.task_date{
+  font-weight: 400;
+  font-size: 12px;
 }
-.reminder_title{
-    font-weight: 600;
-    font-size: 1.2rem;
-    text-transform: capitalize;
-    margin-left: 1rem;
-    cursor: pointer;
-    transition: all 0.2s ease-in-out;
-}
-.reminder_title_completed{
-    font-weight: 600;
-    font-size: 1.2rem;
-    text-transform: capitalize;
-    margin-left: 1rem;
-    text-decoration: line-through;
-    cursor: pointer;
-    color: #777;
-}
-.reminder_date{
-    background-color: antiquewhite;
-    display: flex;
-    justify-content: center;
-    margin: 10px;
-    max-width: 100px;
-    border-radius: 10px;
-    font-weight: 400;
-    font-size: .75rem;
-}
-.delete_reminder_btn{
-    border: none;
-    background-color: rgba(0, 0, 0, 0);
-    font-size: 24px;
-    transition: all 0.3s ease-in-out;
-}
-.delete_reminder_btn:hover{
-    color: #e10d05;
-}
-.table tr{
-    border-bottom: 1px solid black;
+.completed{
+  color: #777;
 }
 
 .row {
-    position: relative;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-  }
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+}
 
-  .row input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-    height: 0;
-    width: 0;
-  }
+.checkBox {
+  flex-shrink: 0;
+  margin: 0;
+  padding: 0;
+}
 
-  .checkmark {
-    display: flex;
-    align-items: center;
-    top: 0;
-    left: 0;
-    height: 20px;
-    width: 20px;
-    cursor: pointer;
-    
-    background-color: rgba( 255, 255, 255, 0.5);
-    border-radius: 50%;
-    border: 2px solid rgba( 255, 255, 255, 0.18);
-    box-shadow: 0 0px 5px 0 rgba( 31, 38, 135, 0.37);
-  }
-  
-  .row:hover input ~ .checkmark {
-    background-color: #ccc;
-  }
-  
-  .row input:checked ~ .checkmark {
-    background-color: #4781ff;
-  }
-  
-  .checkmark:after {
-    content: "";
-    position: absolute;
-    display: none;
-  }
-  
-  .row input:checked ~ .checkmark:after {
-    display: flex;
-  }
-  
-  .row .checkmark:after {
-    left: 8px;
-    top: 7px;
-    width: 5px;
-    height: 10px;
-    border: solid white;
-    border-width: 0 2px 2px 0;
-    -webkit-transform: rotate(35deg);
-    -ms-transform: rotate(35deg);
-    transform: rotate(35deg);
-  }
+.checkmark {
+  display: flex;
+  align-items: center;
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+  background-color: rgba( 255, 255, 255, 0.5 );
+  border-radius: 50%;
+  border: 2px solid rgba( 255, 255, 255, 0.18 );
+  box-shadow: 0 0px 5px 0 rgba( 31, 38, 135, 0.37 );
+  margin-right: 0.5rem;
+}
+
+.reminder_title, .reminder_title_completed {
+  font-weight: 600;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  margin: 0;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+  flex: 1;
+  max-width: 500px;
+}
+
+.reminder_title_completed {
+  text-decoration: line-through;
+  color: #777;
+}
+
+.reminder_date {
+  background-color: antiquewhite;
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+  max-width: 100px;
+  border-radius: 10px;
+  font-weight: 400;
+  font-size: .75rem;
+}
+
+.delete_reminder_btn {
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  font-size: 24px;
+  transition: all 0.3s ease-in-out;
+}
+
+.delete_reminder_btn:hover {
+  color: #e10d05;
+}
+
+.table tr {
+  border-bottom: 1px solid black;
+}
+
+.row {
+  position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.row input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.row input:checked ~ .checkmark {
+  background-color: #4781ff;
+}
+
+.row:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.row input:checked ~ .checkmark:after {
+  display: flex;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+  left: 8px;
+  top: 4.5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(35deg);
+  -ms-transform: rotate(35deg);
+  transform: rotate(35deg);
+}

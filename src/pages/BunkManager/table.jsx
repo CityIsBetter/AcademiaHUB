@@ -17,8 +17,8 @@ const Table = ({rows, deleteRow, editRow}) => {
             left: 20,
             bottom: 5,
           }} className='graph'>
-        <XAxis dataKey="course" stroke="#8884d8" />
-        <YAxis  type='number' domain={[0, 100]}/>
+        <XAxis dataKey="course" stroke="#000" />
+        <YAxis  type='number' domain={[0, 100]} stroke='#000'/>
         <CartesianGrid stroke="#333" strokeDasharray="10 10" />
         <Bar dataKey="attendance" fill="#8884d8" barSize={20} activeBar={<Rectangle fill="pink" stroke="blue" />} />
       </BarChart>
